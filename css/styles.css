@@ -8,9 +8,40 @@ nav {
     background-color: #8BD1D3;
 }
 
+.up-nav {
+    background-color: #FED5D1;
+    margin-bottom: 0;
+}
+
+.up-nav ul {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.up-nav ul li{
+   align-items: center;
+   justify-content: left;
+   max-width: 30px;
+   width: 100%;
+}
+
+.up-nav ul img {
+    max-width: 60%;
+    max-height: 1;
+    filter: opacity(0.4) drop-shadow(0 0 0);
+}
+
+.up-nav ul img:hover {
+    max-width: 60%;
+    max-height: 1;
+}
+
 a {
     color: #ffff;
     text-decoration: none;
+    padding-bottom: auto;
 }
 
 ul{
@@ -19,12 +50,15 @@ ul{
 }
 
 .nav-main {
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
     padding: 10px 0;
+    padding-top: 29px;
+    width: 100%;
+    margin: 0;
 }
 
 .nav-main ul {
@@ -37,11 +71,83 @@ ul{
 
 .nav-main ul li a:hover {
     border-bottom: 2px solid #ffff;
+
+}
+
+.nav-main a:hover {
+    color:#ffffff;
 }
 
 
 .nav-main ul .nva-menu {
     flex: 1;
+}
+
+
+/*SECCION: Servicios (3 paquetes) */
+
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+}
+
+.col .card {
+    display: flex;
+    
+
+}
+
+
+
+/*SECCION: Unete a la familia*/
+
+.form-unete {
+    display: flex;
+    padding: 0;
+    height: auto;    
+}
+
+.form-unete .izquierda{
+    margin: 30px 30px;
+    max-width: 400px;
+    width: 100%;
+    
+    
+}
+.form-unete .izquierda img{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.form-unete .izquierda .row .titulo{
+    display: flex;
+    padding: 100px;
+}
+
+.izquierda h2 {
+    justify-content: space-between;
+}
+
+.form-unete form {
+    max-width: 700px;
+    width: 100%;
+}
+
+.form-unete form .input-unete {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .form-unete .input-unete {
+    display: flex;
 }
 
 /*FOOTER*/
@@ -59,9 +165,9 @@ footer {
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    gap: 20px;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .footer-container ul {
@@ -69,7 +175,7 @@ footer {
 }
 
 .footer-container ul li {
-    line-height: 1.8;
+    line-height: 10cm;
 }
 
 .footer {
@@ -82,14 +188,14 @@ footer {
 }
 
 
-.form-unete {
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    height: 35px;
-    padding: 10px 0;
+.boton {
+    border-radius: 100px;
+    background-color: #FED5D1;
+    border: none;
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 10px 30px;
+    font-size: 0.6cm;
 }
 
-.unete {
-    display: flex;
-}
+

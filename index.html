@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Titulo de la página web-->
+    <!--Titulo y logo de la página web-->
     <title>Natalia Becerra</title>
+    <link rel="icon" href="img/logonatalia.ico">
 
     <!--Vinculo con Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +20,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
     <!--Vinculo con archivos .css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    
 
 </head>
 <body>
 
     <header>
-        <nav class="nav-main">
+        <div class="up-nav">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/sanandoconarmonia/" target="_blank"><img src="img/instagram.png" alt="" id="IG"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/conarmoniasanamos" target="_blank"><img src="img/facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=56996898202&app=facebook&entry_point=page_cta&fbclid=IwAR08uLrcmmtacV_gIcGW0_-oZLA-oihWss03oH70JKTs8wjTlHUcL2wjVmg" target="_blank"><img src="img/whatsapp.ico.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        
+        <nav class="nav-main fijada">
             <ul class="nav-menu-logo">
                 <li>
                     <a href="#">Logo Natalia</a>
@@ -53,19 +70,79 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div class="form-unete">
-            <h2>Unete a mi familia ya</h2>
-            <p>Buscar ayuda es el primer paso para sanar</p>
-            <input class="unete" type="text" placeholder="Nombre*">
-            <input class="unete" type="text" placeholder="Correo*">
-            <input class="unete" type="checkbox"> Acepto la politica de privacidad y la politica de cockies
-            <input class="unete" type="submit" value="¡Unirme ya!">
-        </div>
-      
 
+    <div class="container">
+        <section class="form-unete" id="unete">
+            <div class="row">
+                <div class="col-5 izquierda">
+                    <img src="img/logonatalia.ico" class="" alt="Natalia">
+                    <div class="row titulo">
+                        <div class="col-12">
+                            <h2>UNETE A MI FAMILIA YA</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Buscar ayuda es el primer paso para sanar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">                    
+                    <form action="#">
+                        <input type="text" class="input-unete" id="nombreUnete" placeholder="Nombre*">
+                        <input type="text" class="input-unete" id="correoUnete" placeholder="Correo*">
+                        <input type="checkbox" class="input-unete" > Acepto la politica de privacidad y la politica de cockies
+                        <input type="submit" class="boton"  value="¡Unirme ya!" id="boton">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="carrusel-instagram">
+            <div class="row">
+                <div class="col">
+                    <iframe width="320" height="440" src="https://www.instagram.com/p/CdMw2dEFZnq/embed" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicios">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <!--<img src="img/insta.ico" class="card-img-top" alt="...">  SI VA CON IMAGEN--> 
+                        <div class="card-body">
+                            <h5 class="card-title">Paquete 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="boton">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <!--<img src="img/insta.ico" class="card-img-top" alt="...">  SI VA CON IMAGEN--> 
+                        <div class="card-body">
+                            <h5 class="card-title">Paquete 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class=" boton">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <!--<img src="img/insta.ico" class="card-img-top" alt="...">  SI VA CON IMAGEN--> 
+                        <div class="card-body">
+                            <h5 class="card-title">Paquete 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="boton">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+   
     <div class="footer-links">
         <div class="footer-container">
             <ul>
@@ -101,6 +178,7 @@
         </div>
     </div>
 
+    
     <footer class="footer">
         <h3>Todos los derechos reservados</h3>
     </footer>
@@ -113,5 +191,10 @@
 
     <!--Vinculo con archivos .js -->
     <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script> src="js/bootstrap.min.js"</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
