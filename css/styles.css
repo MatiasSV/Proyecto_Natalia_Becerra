@@ -204,6 +204,7 @@ ul {
     flex-direction: row;
     text-align: left;
     margin-left: 4px;
+    margin-bottom: 25px;
 }
 
 .form-checkbox input[type=checkbox] {
