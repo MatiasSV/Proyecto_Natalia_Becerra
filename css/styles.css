@@ -259,24 +259,21 @@ footer {
 }
 
 /**TESTIMONIOS**/
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
 
-body{
-    font-family: 'Comfortaa' cursive;
-}
 
-.contenedor{ 
+.testimonios .contenedor{ 
     width: 80%;
     height: 400px;
     overflow: hidden;
     margin: auto;
+    
 }
 
-.slider-contenedor{
+.testimonios .titulo .titulo-testimonio:hover {
+    color:#F1ECEB;
+}
+
+.testimonios .contenedor .slider-contenedor{
     display: flex;
     background: #ffffff;
     height:100%;
@@ -285,12 +282,12 @@ body{
 
 }
 
-p{
+.testimonios .contenedor .slider-contenedor p{
     text-align: center;
     font-style: italic;
 }
 
-.slider-test{
+.testimonios .contenedor .slider-contenedor .slider-test{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -301,7 +298,7 @@ p{
 
 }
 
-img{
+.slider-test img{
     width: 200px;
     height: 200px;
     object-fit: cover;
