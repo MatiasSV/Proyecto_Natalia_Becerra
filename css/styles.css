@@ -14,6 +14,16 @@
     font-family: 'Comfortaa', cursive;
 }
 
+.boton {
+    border-radius: 100px;
+    background-color: #FED5D1;
+    border: none;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 0.6cm;
+    text-align: end;
+}
+
 /*BARRA DE NAVEGACION */
 
 nav {
@@ -109,18 +119,12 @@ ul {
     border-bottom: 0;
 }
 
-
-
-
-
 /*SECCION: Servicios (3 paquetes) */
-
 
 .servicios {
     text-align: center;
     padding: 100px 50px;
 }
-
 
 .servicios .servicios-titulo {
     font-size: 3em;
@@ -138,11 +142,10 @@ ul {
     width: auto;
     height: auto;
     border-radius: 70px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 100px;
 
 }
-
 
 .servicios .card .card-body .card-title {
     font-size: 30px;
@@ -163,24 +166,12 @@ ul {
     color: #F1ECEB;
 }
 
-/*
-.servicios .card .card-body a{
-    display: flex;
-    margin: 10px;
-    margin-top: 20px;
-    color: #ffffff;
-}
-
-.servicios .card .card-body a:hover {
-    color: #F1ECEB;
-}
-*/
-
 
 /*SECCION: Unete a la familia*/
 
 .form-unete {
     padding: 50px;
+    padding-left: 0;
     height: auto;
 }
 
@@ -213,6 +204,7 @@ ul {
     flex-direction: row;
     text-align: left;
     margin-left: 4px;
+    margin-bottom: 25px;
 }
 
 .form-checkbox input[type=checkbox] {
@@ -271,30 +263,10 @@ ul {
     border-radius: 100%;
 }
 
-/** FIN TESTIMONIOS //*
-
-
+/** FIN TESTIMONIOS */
 
 /*FOOTER*/
 
-.boton {
-    border-radius: 100px;
-    background-color: #FED5D1;
-    border: none;
-    color: #ffffff;
-    padding: 10px 30px;
-    font-size: 0.6cm;
-    text-align: end;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Comfortaa', cursive;
-}
 
 .pie-pagina {
     width: 100%;
@@ -320,7 +292,7 @@ ul {
 }
 
 .pie-pagina .grupo-1 .box figure img {
-    width: 250px;
+    width: 100%;
 }
 
 .pie-pagina .grupo-1 .box h2 {
@@ -424,11 +396,10 @@ ul {
     width: 200px;
     height: 200px;
     overflow: hidden;
-    border-radius: 100%
+    border-radius: 100%;
 }
 
-;
 
 .pago_img {
-    max-width: 0.9rem;
+    max-width: 12rem;
 }
