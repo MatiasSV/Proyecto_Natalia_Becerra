@@ -91,16 +91,45 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 100px 50px;
 }
 
-.card {
-    width: 300px;
-}
-
-.col .card {
+.servicios .card {
     display: flex;
+    width: 330px;
+    height: 500px;
+    border-radius: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     
+}
 
+
+.servicios .card .card-body .card-title {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding: 20px;
+    font-weight: 400;
+    filter: opacity(0.6) drop-shadow(0 0 0);
+}
+
+.servicios .card .card-body .card-text {
+    display: flex;
+    padding: 20px;
+}
+
+.servicios .card .card-body a{
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.servicios .card .card-body a:hover {
+    color: #F1ECEB;
 }
 
 
