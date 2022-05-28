@@ -6,11 +6,12 @@
     --blanco: white;
     --negro: black;
 }
+
 /* PALETA DE COLORES */
 
 
 * {
-    font-family: 'Comfortaa', cursive; 
+    font-family: 'Comfortaa', cursive;
 }
 
 /*BARRA DE NAVEGACION */
@@ -31,11 +32,11 @@ nav {
     margin-left: 20px;
 }
 
-.up-nav ul li{
-   align-items: center;
-   justify-content: left;
-   max-width: 30px;
-   width: 100%;
+.up-nav ul li {
+    align-items: center;
+    justify-content: left;
+    max-width: 30px;
+    width: 100%;
 }
 
 .up-nav ul img {
@@ -55,7 +56,7 @@ a {
     width: auto;
 }
 
-ul{
+ul {
     list-style: none;
     color: #ffff;
 }
@@ -86,7 +87,7 @@ ul{
 }
 
 .nav-main a:hover {
-    color:#ffffff;
+    color: #ffffff;
 }
 
 
@@ -139,7 +140,7 @@ ul{
     border-radius: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+
 }
 
 
@@ -180,193 +181,58 @@ ul{
 
 .form-unete {
     padding: 50px;
-    height: auto;    
+    height: auto;
 }
-.formulario-newsletter{
+
+.formulario-newsletter {
     padding-top: 30px;
 }
 
-.input-unete{
-    width:100%;
+.input-unete {
+    width: 100%;
     height: 50px;
-    float:center;
+    float: center;
     font-size: 20px;
     margin-bottom: 20px;
-  }
-.col {
+}
+
+.form-unete .col {
     text-align: center;
     width: 50%;
 }
 
-.col img {
+.form-unete .col img {
     width: 200px;
     max-width: 200px;
     margin: 0 0 20px 0;
 }
 
 
-.form-checkbox{
+.form-checkbox {
     display: flex;
     flex-direction: row;
     text-align: left;
     margin-left: 4px;
 }
+
 .form-checkbox input[type=checkbox] {
     transform: scale(1.5);
 }
-.form-checkbox label{
-    padding: 0  10px;
+
+.form-checkbox label {
+    padding: 0 10px;
     font-size: 12px;
 }
 
-/*FOOTER*/
 
-footer {
-    background-color: #8BD1D3;
-}
-
-.footer-links {
-    padding: 35px 0;
-    background-color: #8BD1D3;
-
-}
-
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.footer-container ul {
-    margin: 0 auto;
-}
-
-.footer-container ul li {
-    line-height: 10cm;
-}
-
-.footer {
-    background-color: #FED5D1;
-    color: #ffff;
-    font-size: 12px;
-    padding: 10px 0;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-
-.boton {
-    border-radius: 100px;
-    background-color: #FED5D1;
-    border: none;
-    color: #ffffff;
-    padding: 10px 30px;
-    font-size: 0.6cm;
-    text-align: end;
-}
-
-
-/*FOOTER*/
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Comfortaa', cursive;
-}
-.pie-pagina{
-    width: 100%;
-    background-color: var(--primario);
-}
-.pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
-    padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-}
-.pie-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: var(--secundario);
-    text-align: center;
-    transition: all 300ms ease;
-    border-radius: 100%
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: black ;
-}
-.pie-pagina .grupo-2{
-    background-color: var(--secundario);
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-}
-.pie-pagina .grupo-2 small{
-    font-size: 15px;
-}
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 0px;
-    }
-}
-
-/* IMAGENES DE FOOTER */
-
-.img_naty {
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 100%
-  };
-
-.pago_img {
-    max-width: 0.9rem;
-}
-
-/**TESTIMONIOS**/
-
+/* TESTIMONIOS INICIO */
 
 .testimonios .contenedor{ 
     width: 80%;
     height: 400px;
     overflow: hidden;
     margin: auto;
-    
+
 }
 
 .testimonios .titulo .titulo-testimonio:hover {
@@ -406,3 +272,119 @@ footer {
 }
 
 /** FIN TESTIMONIOS //*
+
+
+
+/*FOOTER*/
+
+.boton {
+    border-radius: 100px;
+    background-color: #FED5D1;
+    border: none;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 0.6cm;
+    text-align: end;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: var(--primario);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: var(--secundario);
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 100%
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: black;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: var(--secundario);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/* IMAGENES DE FOOTER */
+
+.img_naty {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%
+}
+
+;
+
+.pago_img {
+    max-width: 0.9rem;
+}
