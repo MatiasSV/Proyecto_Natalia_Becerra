@@ -25,3 +25,6 @@ function slides(){
     },intervalo)
  }
 }
+
+var div = document.getElementById('eapps-link');
+div.remove();
