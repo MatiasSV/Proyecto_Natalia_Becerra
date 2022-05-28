@@ -41,7 +41,7 @@ nav {
 a {
     color: #ffff;
     text-decoration: none;
-    padding-bottom: auto;
+    width: auto;
 }
 
 ul{
@@ -79,26 +79,52 @@ ul{
 }
 
 
-.nav-main ul .nva-menu {
+.nav-main ul .nav-menu {
     flex: 1;
 }
+
+.nav-main ul.nav-menu-logo {
+    max-width: 110px;
+    width: 100%;
+    padding: 10px 10px;
+    margin-left: 50px;
+    padding-bottom: auto;
+    display: flex;
+}
+
+.nav-main .nav-menu-logo li a:hover {
+    color: #ffffff;
+    border-bottom: 0;
+}
+
+
+
 
 
 /*SECCION: Servicios (3 paquetes) */
 
 
 .servicios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     padding: 100px 50px;
 }
 
-.servicios .card {
+
+.servicios .servicios-titulo {
+    font-size: 3em;
+}
+
+.servicios .servicios-texto {
     display: flex;
-    width: 330px;
-    height: 500px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+}
+
+.servicios .card {
+    width: auto;
+    height: auto;
     border-radius: 70px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -121,6 +147,11 @@ ul{
     padding: 20px;
 }
 
+.servicios .card .card-body .boton:hover {
+    color: #F1ECEB;
+}
+
+/*
 .servicios .card .card-body a{
     display: flex;
     margin: 10px;
@@ -131,7 +162,7 @@ ul{
 .servicios .card .card-body a:hover {
     color: #F1ECEB;
 }
-
+*/
 
 
 /*SECCION: Unete a la familia*/
@@ -222,9 +253,9 @@ footer {
     background-color: #FED5D1;
     border: none;
     color: #ffffff;
-    margin: 10px 0;
     padding: 10px 30px;
     font-size: 0.6cm;
+    text-align: end;
 }
 
 
