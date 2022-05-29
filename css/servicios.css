@@ -1,0 +1,46 @@
+/*Servicios*/
+
+.servicios {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.servicios .servicios-titulo {
+    font-size: 3em;
+}
+
+.servicios .servicios-texto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+}
+
+.servicios .card {
+    width: auto;
+    height: auto;
+    border-radius: 70px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+}
+
+.servicios .card .card-body .card-title {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding: 20px;
+    font-weight: 400;
+    filter: opacity(0.6) drop-shadow(0 0 0);
+}
+
+.servicios .card .card-body .card-text {
+    display: flex;
+    padding: 20px;
+}
+
+.servicios .card .card-body .boton:hover {
+    color: #F1ECEB;
+}
