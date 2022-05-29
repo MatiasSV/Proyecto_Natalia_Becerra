@@ -14,6 +14,10 @@
     font-family: 'Comfortaa', cursive;
 }
 
+body {
+    background: #fffbf9;
+}
+
 .boton {
     border-radius: 100px;
     background-color: #FED5D1;
@@ -165,6 +169,94 @@ ul {
 .servicios .card .card-body .boton:hover {
     color: #F1ECEB;
 }
+
+/*SECCION: CARRUSEL REELS*/
+
+.carrusel-reels {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+
+.carrusel-reels .container {
+    width: 1110px;
+    height: 520px;
+}
+
+.carrusel-reels .card {
+    width: 300px;
+    height: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.carrusel-reels .card::before {
+    content: "";
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 50px 50px 0 0;
+    
+}
+
+.carrusel-reels .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.carrusel-reels .card .image {
+    height: 440px;
+    width: 320px;
+    padding: 10px;
+}
+
+.carrusel-reels .card .image iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+    
+}
+
+.carrusel-reels .swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #8BD1D3;
+}
+
+.carrusel-reels .swiper-button-next {
+    opacity: 0.5;
+    color: #8BD1D3;
+    transition: all 0.3s ease;
+}
+
+.carrusel-reels .swiper-button-prev {
+    opacity: 0.5;
+    color: #8BD1D3;
+    transition: all 0.3s ease;
+}
+
+.carrusel-reels .swiper-button-next:hover {
+    opacity: 1;
+    color: #8BD1D3;
+}
+
+.carrusel-reels .swiper-button-prev:hover {
+    opacity: 1;
+    color: #8BD1D3;
+}
+
+
 
 
 /*SECCION: Unete a la familia*/
