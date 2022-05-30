@@ -1,5 +1,13 @@
-/*FOOTER*/
+/* PALETA DE COLORES */
+:root {
+    --primario: #8BD1D3;
+    --secundario: #FED5D1;
+    --oscuro: rgb(147, 228, 170);
+    --blanco: white;
+    --negro: black;
+}
 
+/*FOOTER*/
 
 .pie-pagina {
     width: 100%;
@@ -24,19 +32,23 @@
     align-items: center;
 }
 
-.pie-pagina .grupo-1 .box figure img {
-    width: 100%;
+.pie-pagina .grupo-1 .box .pago_img{
+    max-width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
 }
 
 .pie-pagina .grupo-1 .box h2 {
     color: #fff;
-    margin-bottom: 25px;
     font-size: 20px;
 }
 
+/* Este css modifica .p de Natalia B. "PSICOLOGA DE RELACIONES CON 10 AÑOS DE EXPERIENCIA"*/
 .pie-pagina .grupo-1 .box p {
     color: #efefef;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
 .pie-pagina .grupo-1 .red-social a {
@@ -62,6 +74,14 @@
     padding: 15px 10px;
     text-align: center;
     color: #fff;
+}
+
+.naty_text {
+    text-align: center;
+}
+
+.naty_text p{
+    text-align: center;
 }
 
 .pie-pagina .grupo-2 small {
@@ -130,9 +150,8 @@
     height: 200px;
     overflow: hidden;
     border-radius: 100%;
+    top: -9%;
+    right: -22%;
 }
 
 
-.pago_img {
-    max-width: 12rem;
-}
