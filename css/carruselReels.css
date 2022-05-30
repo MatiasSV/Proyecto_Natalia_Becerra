@@ -1,18 +1,31 @@
 /*SECCION: CARRUSEL REELS*/
 
+.titulo-carrusel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-carrusel h1 {
+    font-size: 1cm;
+}
+
 .carrusel-reels {
     position: relative;
     height: auto;
     width: auto;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 50px;
+    background-image: url('../img/fondohoja.png');
+    opacity: 0.9;
 }
 
 
 .carrusel-reels .container {
     width: 1110px;
     height: 520px;
+    
 }
 
 .carrusel-reels .card {
