@@ -1,0 +1,15 @@
+/* PALETA DE COLORES */
+:root {
+    --primario: #8BD1D3;
+    --secundario: #FED5D1;
+    --oscuro: rgb(147, 228, 170);
+    --blanco: white;
+    --negro: black;
+}
+/* PALETA DE COLORES */
+
+
+.sobreMi_section {
+    text-align: center;
+    padding: 100px 50px;
+}
