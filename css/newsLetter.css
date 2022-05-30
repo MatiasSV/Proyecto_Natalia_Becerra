@@ -29,6 +29,10 @@
     margin: 0 0 20px 0;
 }
 
+.form-unete .input-unete{
+    padding: 20px;
+}
+
 
 .form-checkbox {
     display: flex;
