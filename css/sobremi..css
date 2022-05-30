@@ -8,6 +8,17 @@
 }
 /* PALETA DE COLORES */
 
+/* inicio/home */
+
+.home {
+    text-align: center;
+    padding: 100px 50px;
+}
+
+
+/* fin css inicio/home */
+
+
 
 .sobreMi_section {
     text-align: center;
