@@ -1,5 +1,13 @@
 /* TESTIMONIOS  */
 
+.testimonios .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
 .testimonios .contenedor{ 
     width: 80%;
     height: 400px;
@@ -8,8 +16,10 @@
 
 }
 
-.testimonios .titulo .titulo-testimonio:hover {
-    color:#F1ECEB;
+.testimonios .titulo .titulo-testimonio {
+    width: 50%;
+    padding: auto;
+    margin: 50px 0;
 }
 
 .testimonios .contenedor .slider-contenedor{

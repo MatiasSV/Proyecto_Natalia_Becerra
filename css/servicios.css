@@ -18,6 +18,14 @@
 
 }
 
+.servicios .servicios-texto .servicios-bajada-titulo {
+    padding: 50px 0px;
+}
+
+.servicios .servicios-texto .servicios-parrafo {
+    padding: 1px;
+}
+
 .servicios .card {
     width: auto;
     height: auto;
