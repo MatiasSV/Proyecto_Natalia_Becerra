@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo y logo de la página web-->
+    <title>{% block title %} Natalia Becerra {% endblock title %}</title>
+    <link rel="icon" href="{% static 'img/logonatalia.ico' %}">
+
+    <!--Vinculo con Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--Importacion de tipografia COMFORTAA Regular-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!--Importacion de tipografia COMFORTAA Light-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+    <!--Importacion de Iconos Font Awasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--Vinculo con archivos .css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/servicios.css' %}">
+    <link rel="stylesheet" href="{% static 'css/testimonios.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carruselReels.css' %}">
+    <link rel="stylesheet" href="{% static 'css/newsLetter.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sobremi.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="up-nav">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/nataliabecerraulloa/" target="_blank"><img src="{% static 'img/instagram.svg' %}"
+                            alt="" id="IG"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/conarmoniasanamos" target="_blank"><img src="{% static 'img/facebook.svg' %}"
+                            alt=""></a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=56996898202&app=facebook&entry_point=page_cta&fbclid=IwAR08uLrcmmtacV_gIcGW0_-oZLA-oihWss03oH70JKTs8wjTlHUcL2wjVmg"
+                        target="_blank"><img src="{% static 'img/whatsapp.svg' %}" alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="nav-main fijada">
+            <ul class="nav-menu-logo">
+                <li>
+                    <a href="index.html"><img src="{% static 'img/logonatalia.ico' %}" class="img-logo" alt=""></a>
+                    <!--<a href="#">Logo Natalia</a>-->
+                </li>
+            </ul>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Podcast</a>
+                </li>
+                <li>
+                    <a href="sobre_mi.html">Sobre Mí</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Horas disponibles</a>
+                </li>
+            </ul>
+        </nav>
+
+        
+        {% block presentacion %}
+
+        {% endblock presentacion %}
+    </header>
+
+    {% block contenido %}
+
+    {% endblock contenido %}
+
+    <!--::::Footer::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                </figure>
+                <h2>METODOS DE PAGO</h2>
+                </figure>
+                <img class="pago_img" src="{% static 'img/CutPay.png' %}" alt="Metodos_de_pago.png">
+            </div>
+
+
+            <div class="box">
+                <img class="img_naty" src="{% static 'img/Naty.png' %}" alt="">
+                <h2 class="naty_text">NATALIA BECERRA</h2>
+                <p>PSICOLOGA DE RELACIONES CON 10 AÑOS DE EXPERIENCIA </p>
+            </div>
+            <div class="box">
+                <h2>REDES SOCIALES</h2>
+                <div class="red-social">
+                    <a href="#" target="_blank" class="fab fa-facebook"></a>
+                    <a href="https://www.instagram.com/nataliabecerraulloa/" target="_blank" class="fab fa-instagram"></a>
+                    <a href="#" target="_blank" class="fab fa-whatsapp"></a>
+                </div>
+
+                <div class="box2">
+                    <hr>
+                    </hr>
+                    <h2>CONTACTAME</h2>
+                    <h2>Email: sanandoconarmonia@gmail.com</h2>
+                    <h2>Telefono: 958438509</h2>
+                    <div class="contactame"> </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2021 <b>Natalia Becerra</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+
+    <!--Vinculo con archivos .js -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'main.js' %}"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block presentacion %}
+        <section class="presentacion">
+            <div class="row newprueba">
+                <div class="col-5 texto">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="intro-titulo">¿Sientes que <b>no es suficiente</b> todo lo que haces para que tú y tu pareja
+                                estén bien?
+                            </h3> <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>
+                                Generalmente, tardamos mucho en decidirnos ir a una Psicóloga. De hecho, solemos
+                                hacerlo cuando está afectando la relación con la pareja, con los hijos o cuando
+                                se vive una enfermedad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>
+                                Soy Natalia Becerra, pero puedes llamarme Naty. Te quiero ofrecer un espacio donde
+                                puedas ser tú misma/o, mostrarte tal como eres, donde vas a sentir esa <b>conexión,
+                                tranquilidad, y confianza</b> que necesitas para expresar tus emociones y pensamientos
+                                sin miedo y sin juicio alguno.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row nleter">
+                        <div class="col-10">
+                            <hr><p>Buscar ayuda es el primer paso para sanar</p>
+                            <form action="#">
+                                <div class="formulario-newsletter">
+                                    <input type="text" class="input-unete" id="nombreUnete" placeholder="Nombre*">
+                                    <input type="email" class="input-unete" id="correoUnete" placeholder="Correo*">
+                                    <div class="form-checkbox">
+                                        <input type="checkbox" id="checkbox-unete" class="checkbox-unete">
+                                        <label for="checkbox-unete">Acepto la política de privacidad y la política de
+                                            cookies</label>
+                                    </div>
+                                    <input type="submit" class="boton" value="¡Unirme ya!" id="boton">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 foto">
+                </div>
+            </div>
+        </section>
+{% endblock presentacion %}
+
+{% block contenido %}
+    <div class="container">
+        <!-- Inicio de sección SOBRE MÍ -->
+        <section class="sobremi">
+            <h1>Sobre mi</h1>
+        </section>
+        <!-- Fin de Section Sobre mí -->
+
+        <!--SECCION CARRUSEL REELS-->
+        <section class="titulo-carrusel">
+            <div class="row">
+                <div class="col ">
+                    <h1 class="diseño-rosado">Hablemos de...</h1>
+                </div>
+            </div>
+        </section>
+        <section class="carrusel-reels">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/p/CdMw2dEFZnq/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/Cc1S038pYzi/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/Cbqvd75lpAn/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/CbYrVU7FGzB/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/CbOW2YnFZkf/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/Ca5xZJplqgp/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/Ca0mymkJGpv/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/Camyw_llwZG/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <iframe src="https://www.instagram.com/reel/CalHhyppKRu/embed" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <!--FIN SECCION CARRUSEL REELS-->
+
+        <!-- SECCIÓN ULTIMOS POSTS-->
+        <section class="ultimos-posts-ig" style="height: 520px;">
+            <div class="elfsight-app-3a9a1950-b573-483c-aed8-b39f7bb94adc" style="z-index:0; position:relative;"></div>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div style="background-color: #fffbf9; width:100%; height:100px; z-index: 1; position:relative;"></div>
+        </section>
+        <!-- FIN SECCIÓN ULTIMOS POSTS-->
+
+        <!--SECCION SERVICIOS (3 PAQUETES)-->
+        <section class="servicios">
+            <div class="row servicios-row">
+                <div class="col-12">
+                    <h2 class="servicios-titulo"> <b>Te mereces un acompañamiento profesional</b></h2>
+                </div>
+                <div class="col-12 servicios-texto">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="servicios-bajada-titulo">
+                                <p>¿Quieres sentir confianza y seguridad?</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="servicios-parrafo">
+                                <p>
+                                    A menudo quisiéramos que nuestras parejas cambiaran para nosotros ser felices, pero,
+                                    que tu pareja cambie,
+                                    ¿depende de ti? Lo más probable es que tu respuesta sea <i>no</i>. Si sueñas con
+                                    sentirte en libertad, tranquila/o,
+                                    auténtica/o, confiar en ti misma/o, expresar tus emociones de buena forma, sentirte
+                                    <b>valorada/o, escuchada/o y
+                                        amada/o</b> en tus relaciones de pareja, te invito a conocer mis servicios:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Paquete N° 1</h5>
+                            <p class="card-text">Te ayudo a obtener claridad de tu situación actual.</p>
+                            <p class="card-text">Sesión individual de una hora, aproximadamente, vía Zoom.</p>
+                            <button class="boton" data-toggle="modal" data-target="#servicio-modal-1">Quiero saber
+                                más</button>
+                            <div class="modal fade" id="servicio-modal-1" tabindex="-1" role="dialog"
+                                aria-labelledby="servicio-modal-1" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Paquete Psicológico N° 1</h4>
+                                            <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                                <span aria-hidden="true"> &times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Te ayudo a obtener claridad de tu situación actual.</p>
+                                            <p><b>Aclara tus dudas y aprende nuevas alternativas para solucionar lo que
+                                                    deseas.</b></p>
+                                            <div class="row despliegue">
+                                                <div class="col">
+                                                    <p><u>Incluye:</u></p>
+                                                    <p class="tabulado"> - Una sesión individual de una hora
+                                                        aproximadamente vía Zoom.</p>
+                                                    <p>¿Qué vas a lograr?</p>
+                                                    <p class="tabulado"> - Tener claridad y seguridad para que tomes
+                                                        decisiones.</p>
+                                                    <p class="tabulado"> - Identificar las herramientas que tú ya posees
+                                                        para afrontar posibles conflictos.</p>
+                                                    <p class="tabulado"> - Reconocer y gestionar las emociones que te
+                                                        generan dificultades.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="boton"> <a href="servicios.html"> Ver más </a></button>
+                                            <button class="boton-volver" data-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Paquete N° 2</h5>
+                            <p class="card-text">Te ayudo a afrontar conversaciones difíciles.</p>
+                            <p class="card-text">4 sesiones individuales de una hora, aproximadamente, vía Zoom.</p>
+
+                            <button class="boton" data-toggle="modal" data-target="#servicio-modal-2">Quiero saber
+                                más</button>
+                            <div class="modal fade" id="servicio-modal-2" tabindex="-1" role="dialog"
+                                aria-labelledby="servicio-modal-2" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Paquete Psicológico N° 2</h4>
+                                            <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                                <span aria-hidden="true"> &times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Te ayudo a afrontar conversaciones difíciles.</p>
+                                            <p><b>Comienzas a ser más consciente de todo lo que quieres para ti.</b></p>
+                                            <div class="row despliegue">
+                                                <div class="col">
+                                                    <p><u>Incluye:</u></p>
+                                                    <p class="tabulado"> - 4 sesiones individuales de una hora
+                                                        aproximadamente vía Zoom.</p>
+                                                    <p>¿Qué vas a lograr?</p>
+                                                    <p class="tabulado"> - Aprenderás a afrontar conversaciones
+                                                        difíciles, de forma respetuosa contigo misma/o y con tu pareja.
+                                                    </p>
+                                                    <p class="tabulado"> - Aprenderás a regular tu estado interno en las
+                                                        situaciones difíciles con tu pareja.</p>
+                                                    <p class="tabulado"> - Podrás identificar tus propias herramientas
+                                                        para poder enfrentar conflictos puntuales.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="boton"> <a href="servicios.html"> Ver más </a></button>
+                                            <button class="boton-volver" data-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Paquete N° 3</h5>
+                            <p class="card-text">Te ayudo con estrategias que son efectivas.</p>
+                            <p class="card-text">8 sesiones individuales de una hora, aproximadamente, vía Zoom.</p>
+
+                            <button class="boton" data-toggle="modal" data-target="#servicio-modal-3">Quiero saber
+                                más</button>
+                            <div class="modal fade" id="servicio-modal-3" tabindex="-1" role="dialog"
+                                aria-labelledby="servicio-modal-3" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Paquete Psicológico N° 3</h4>
+                                            <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                                                <span aria-hidden="true"> &times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Te ayudo con estrategias efectivas para hacerte cargo de ti misma/o.</p>
+                                            <div class="row despliegue">
+                                                <div class="col">
+                                                    <p><u>Incluye:</u></p>
+                                                    <p class="tabulado"> - 8 sesiones individuales de una hora
+                                                        aproximadamente vía Zoom.</p>
+                                                    <p>¿Qué vas a lograr?</p>
+                                                    <p class="tabulado"> - Podrás entender, comprender y sanar tus
+                                                        heridas emocionales.</p>
+                                                    <p class="tabulado"> - Aprenderás a resignificar las creencias que
+                                                        te impiden estar bien contigo y con tu pareja (si corresponde).
+                                                    </p>
+                                                    <p class="tabulado"> - Aprenderás a regular tu estado interno en las
+                                                        situaciones difíciles con tu pareja (si corresponde).</p>
+                                                    <p class="tabulado"> - Incorporarás estrategias efectivas para
+                                                        gestionar tus emociones.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="boton"> <a href="servicios.html"> Ver más </a></button>
+                                            <button class="boton-volver" data-dismiss="modal">Volver</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FIN SECCION SERVICIOS-->
+
+        <!--SECCION DE TESTIMONIOS-->
+        <section class="testimonios">
+            <div class="row">
+                <div class="col-12 titulo">
+                    <h2 class="titulo-testimonio diseño-rosado ">Testimonios</h2>
+                </div>
+            </div>
+            
+            <div class="contenedor">
+                <div class="slider-contenedor">
+                    <div class="slider-test">
+                        <p>Natalia es excelente persona, 100% recomendada
+                            Me encuentro muy agradecida con ella.
+                            realmente sanas con mucha armonia y paz.
+                            Me enseñó a re-conectarme conmigo. A
+                            perdonar y a entender lo linda que es la
+                            vida</p>
+                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio1">
+                        <h3>Mariett Ortega</h3>
+                    </div>
+
+                    <div class="slider-test">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, molestiae!</p>
+                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio2">
+                        <h3>Name2</h3>
+                    </div>
+
+                    <div class="slider-test">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, molestiae!</p>
+                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio3">
+                        <h3>Name3</h3>
+                    </div>
+
+                    <div class="slider-test">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, molestiae!</p>
+                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio4">
+                        <h3>Name4</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FIN  SECCION TESTIMONIOS-->
+        <br><br><hr><hr><br><br>
+
+        <!--SECCION DE SUSCRIPCIÓN NEWSLETTER-->
+        <section class="form-unete" id="unete">
+            <div class="row">
+                <div class="col" style="text-align: center;">
+                    <img src="{% static 'img/logonatalia.ico' %}" alt="Natalia">
+                    <p>Suscríbete a mi newsletter</p><br>
+                    <p>Buscar ayuda es el primer paso para sanar</p>
+                    
+                </div>
+                <div class="col">
+                    <form action="#">
+                        <div class="formulario-newsletter">
+                            <input type="text" class="input-unete" id="nombreUnete" placeholder="Nombre*">
+                            <input type="text" class="input-unete" id="correoUnete" placeholder="Correo*">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="checkbox-unete" class="checkbox-unete">
+                                <label for="checkbox-unete">Acepto la política de privacidad y la política de
+                                    cookies</label>
+                            </div>
+                            <input type="submit" class="boton" value="¡Unirme ya!" id="boton">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- FIN SECCION DE SUSCRIPCIÓN NEWSLETTER-->
+    </div>
+{% endblock contenido %}
