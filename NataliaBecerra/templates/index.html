@@ -341,38 +341,53 @@
                     <h2 class="titulo-testimonio diseño-rosado ">Testimonios</h2>
                 </div>
             </div>
-            
-            <div class="contenedor">
-                <div class="slider-contenedor">
-                    <div class="slider-test">
-                        <p>Natalia es excelente persona, 100% recomendada
-                            Me encuentro muy agradecida con ella.
-                            realmente sanas con mucha armonia y paz.
-                            Me enseñó a re-conectarme conmigo. A
-                            perdonar y a entender lo linda que es la
-                            vida</p>
-                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio1">
-                        <h3>Mariett Ortega</h3>
-                    </div>
 
-                    <div class="slider-test">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, molestiae!</p>
-                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio2">
-                        <h3>Name2</h3>
-                    </div>
-
-                    <div class="slider-test">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, molestiae!</p>
-                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio3">
-                        <h3>Name3</h3>
-                    </div>
-
-                    <div class="slider-test">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, molestiae!</p>
-                        <img src="{% static 'img/fototestim.png' %}" alt="testimonio4">
-                        <h3>Name4</h3>
-                    </div>
-                </div>
+            <div id="carouseltestimonios" class="carousel slide" data-ride="carousel">
+                <div class = "col-12 mt-5">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <p>Natalia es excelente persona, 100% recomendada
+                          Me encuentro muy agradecida con ella.
+                          realmente sanas con mucha armonia y paz.
+                          Me enseñó a re-conectarme conmigo. A
+                          perdonar y a entender lo linda que es la
+                          vida</p>
+                          <img class ="w3-circle" src="{% static 'img/fototestim.png' %}" alt="First slide">
+                          <br>
+                          <h3 class="titulo-testimonio diseño-rosado ">Mariett Ortega</h3>
+                        </div>
+                        <div class="carousel-item">
+                          <p>Desde que conoci a Natalia cambio mi vida por completo.
+                              Me encuentro muy agradecida con ella.
+                              realmente sanas con mucha armonia y paz.
+                              Me enseñó a re-conectarme conmigo. A
+                              perdonar y a entender lo linda que es la
+                              vida</p>
+                          <img class="w3-circle" src="{% static 'img/fototestim.png' %}" alt="Second slide">
+                          <br>
+                          <h3 class="titulo-testimonio diseño-rosado ">Juan Perez</h3>
+                        </div>
+                        <div class="carousel-item">
+                          <p>Desde que conoci a Natalia cambio mi vida por completo.
+                              Me encuentro muy agradecida con ella.
+                              realmente sanas con mucha armonia y paz.
+                              Me enseñó a re-conectarme conmigo. A
+                              perdonar y a entender lo linda que es la
+                              vida</p>
+                          <img class="w3-circle" src="{% static 'img/fototestim.png' %}" alt="Third slide">
+                          <br>
+                          <h3 class="titulo-testimonio diseño-rosado ">Maria Salazar</h3>
+                        </div>
+                  </div>
+             </div>
+                <a class="carousel-control-prev" href="#carouseltestimonios" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouseltestimonios" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
             </div>
         </section>
         <!--FIN  SECCION TESTIMONIOS-->
