@@ -8,48 +8,41 @@
 
 }
 
-.testimonios .contenedor{ 
-    width: 80%;
-    height: 400px;
-    overflow: hidden;
-    margin: auto;
-
-}
-
 .testimonios .titulo .titulo-testimonio {
     width: 50%;
     padding: auto;
     margin: 50px 0;
 }
 
-.testimonios .contenedor .slider-contenedor{
+.slide {
     display: flex;
-    background: #ffffff;
-    height:100%;
-    width: 100%;
+    background: #ffff;
+    height: 390px;
+    width: 1120px;
+    margin: auto;
     align-items: center;
-
-}
-
-.testimonios .contenedor .slider-contenedor p{
     text-align: center;
-    font-style: italic;
+    border-radius: 40px;
+    border: 2px solid #FED5D1;
 }
 
-.testimonios .contenedor .slider-contenedor .slider-test{
+.slide .active {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
+    height: 99%;
+    width: 99%;
     flex-shrink: 0;
     align-items: center;
-
+}
+.slide .p{
+    text-align: center;
+    font-style: 'Comfortaa';
 }
 
-.slider-test img{
-    width: 200px;
-    height: 200px;
+.w3-circle {
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 100%;
 }

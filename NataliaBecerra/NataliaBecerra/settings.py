@@ -79,9 +79,15 @@ WSGI_APPLICATION = 'NataliaBecerra.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
+<<<<<<< HEAD
+        'NAME': 'NataliaBD',
+        'USER': 'root',
+        'PASSWORD': 'root',
+=======
         'NAME': 'bd_nataliabecerra',
         'USER': 'root',
         'PASSWORD': '',
+>>>>>>> 6e77327faa1ff8e0f01d64d66b1f111a46e9b771
         'HOST': 'localhost',
         'PORT': '3306',
     }
