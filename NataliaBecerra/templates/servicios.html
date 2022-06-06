@@ -1,340 +1,149 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block contenido %}
 
-    <!--Titulo y logo de la página web-->
-    <title>Natalia Becerra</title>
-    <link rel="icon" href="img/logonatalia.ico">
+<div class="container">
 
-    <!--Vinculo con Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!--Importacion de tipografia COMFORTAA Regular-->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-
-    <!--Importacion de tipografia COMFORTAA Light-->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-
-    <!--Importacion de Iconos Font Awasome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <!--Vinculo con archivos .css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/servicios.css">
-    <link rel="stylesheet" href="css/testimonios.css">
-    <link rel="stylesheet" href="css/carruselReels.css">
-    <link rel="stylesheet" href="css/newsLetter.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
-
-</head>
-
-<body>
-
-    <header>
-        <div class="up-nav">
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/sanandoconarmonia/" target="_blank"><img src="img/instagram.svg"
-                            alt="" id="IG"></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/conarmoniasanamos" target="_blank"><img src="img/facebook.svg"
-                            alt=""></a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=56996898202&app=facebook&entry_point=page_cta&fbclid=IwAR08uLrcmmtacV_gIcGW0_-oZLA-oihWss03oH70JKTs8wjTlHUcL2wjVmg"
-                        target="_blank"><img src="img/whatsapp.svg" alt=""></a>
-                </li>
-            </ul>
+    <!--SECCION INTRODUCCION DE SERVICIOS-->
+    <section class="servicios-introduccion">
+        <div class="row row-titulo">
+            <div class="col-1">
+                <img class="ima" id="corazon" src="{% static 'img/16.svg' %}" alt="">
+            </div>
+            <div class="col-6">
+                <h1 class="introduccion-titulo">Servicio Psicoterapéutico</h1>
+            </div>
+            <div class="col-1">
+                <img src="{% static 'img/16.svg' %}" alt="">
+            </div>
         </div>
-
-        <nav class="nav-main fijada">
-            <ul class="nav-menu-logo">
-                <li>
-                    <a href="index.html"><img src="img/logonatalia.ico" class="img-logo" alt=""></a>
-                </li>
-            </ul>
-            <ul class="nav-menu">
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Podcast</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-                <li>
-                    <a href="#">Horas disponibles</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container">
-
-        <!--SECCION INTRODUCCION DE SERVICIOS-->
-        <section class="servicios-introduccion">
-            <div class="row row-titulo">
-                <div class="col-1">
-                    <img class="ima" id="corazon" src="img/16.svg" alt="">
-                </div>
-                <div class="col-6">
-                    <h1 class="introduccion-titulo">Servicio Psicoterapéutico</h1>
-                </div>
-                <div class="col-1">
-                    <img src="img/16.svg" alt="">
-                </div>
+        <div class="row row-saludo">
+            <div class="col-10">
+                <h3 class="introduccion-saludo">Hola...</h3>
             </div>
-            <div class="row row-saludo">
-                <div class="col-10">
-                    <h3 class="introduccion-saludo">Hola...</h3>
-                </div>
+        </div>
+        <div class="row row-parrafo">
+            <div class="col-10">
+                <p class="introduccion-parrafo">
+                    Te cuento que <i>amo</i> ayudar a personas a tomar consciencia y encontrar las respuestas que necesitan dentro 
+                    de sí mismos. Me enfoco en ti mediante hipnosis, programación neurolingüistica y terapia de respuesta espiritual
+                    para que conectes con tu seguridad, confianza y tranquilidad.
+                </p>
+                <p class="introduccion-parrafo">
+                    Mi filosofía es <i>"todo está en ti"</i> y mi misión es que aprendas a expresar tus pensamientos y emociones
+                    respetándote a tu misma/o y a tu pareja.
+                </p>
+                <p class="introduccion-parrafo">¡Vinimos a aprender y a experimentar a la Vida y qué mejor que hacerlo con y desde el amor!</p>
             </div>
-            <div class="row row-parrafo">
-                <div class="col-10">
-                    <p class="introduccion-parrafo">
-                        Te cuento que <i>amo</i> ayudar a personas a tomar consciencia y encontrar las respuestas que necesitan dentro 
-                        de sí mismos. Me enfoco en ti mediante hipnosis, programación neurolingüistica y terapia de respuesta espiritual
-                        para que conectes con tu seguridad, confianza y tranquilidad.
-                    </p>
-                    <p class="introduccion-parrafo">
-                        Mi filosofía es <i>"todo está en ti"</i> y mi misión es que aprendas a expresar tus pensamientos y emociones
-                        respetándote a tu misma/o y a tu pareja.
-                    </p>
-                    <p class="introduccion-parrafo">¡Vinimos a aprender y a experimentar a la Vida y qué mejor que hacerlo con y desde el amor!</p>
-                </div>
-            </div>
-        </section>
-        <!--FIN SECCION INTRODUCCION DE SERVICIOS-->
+        </div>
+    </section>
+    <!--FIN SECCION INTRODUCCION DE SERVICIOS-->
 
-        <!--SECCION PRESENTACION DE SERVICIOS-->
-        <section id="titulo-paquetes" class="servicios-presentacion">
-            <div class="row row-titulo-paquetes">
-                <div class="col-4">
-                    <h2 class="diseño-rosado">Paquete N° 1</h2>
-                </div>
-                <div class="col-4">
-                    <h2 class="diseño-rosado">Paquete N° 2</h2>
-                </div>
-                <div class="col-4">
-                    <h2 class="diseño-rosado">Paquete N° 3</h2>
-                </div>
+    <!--SECCION PRESENTACION DE SERVICIOS-->
+    <section id="titulo-paquetes" class="servicios-presentacion">
+        <div class="row row-titulo-paquetes">
+            <div class="col-4">
+                <h2 class="diseño-rosado">Te presento mis servicios ...</h2>
             </div>
-            <div class="row row-paquetes">
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">Te ayudo a obtener claridad de tu situación actual.</p>
-                            <p class="card-text">Sesión individual de una hora, aproximadamente, vía Zoom.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="boton"> <a href="#paquete-1"> Quiero saber más </a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">Te ayudo a afrontar conversaciones difíciles.</p>
-                            <p class="card-text">4 sesiones individuales de una hora, aproximadamente, vía Zoom.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="boton"><a href="#paquete-2"> Quiero saber más </a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">Te ayudo con estrategias que son efectivas.</p>
-                            <p class="card-text">8 sesiones individuales de una hora, aproximadamente, vía Zoom.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="boton"><a href="#paquete-3"> Quiero saber más </a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--FIN SECCION PRESENTACION DE SERVICIOS-->
+        </div>
+    </section>
+    <!--FIN SECCION PRESENTACION DE SERVICIOS-->
 
-        <!--SECCION INFORMACION DE SERVICIOS-->
-        <section class="servicios-informacion">
-            <div id="paquete-1" class="row row-paquete">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1>Paquete Psicológico N° 1</h1> <br>
-                            <p class="">Te ayudo a obtener claridad de tu situación actual.</p>
-                            <p><b>Aclara tus dudas y aprende nuevas alternativas para solucionar lo que deseas.</b></p>
-                            <br>
-                            <div class="row despliegue">
-                                <div class="col">
-                                    <p><u>Incluye:</u></p>
-                                    <p class="tabulado"> -   Una sesión individual de una hora aproximadamente vía Zoom.</p>
-                                    <p>¿Qué vas a lograr?</p>
-                                    <p class="tabulado"> -   Tener claridad y seguridad para que tomes decisiones.</p>
-                                    <p class="tabulado"> -   Identificar las herramientas que tú ya posees para afrontar posibles conflictos.</p>
-                                    <p class="tabulado"> -   Reconocer y gestionar las emociones que te generan dificultades.</p>
-                                </div>
+    <!--SECCION INFORMACION DE SERVICIOS-->
+    <section class="servicios-informacion">
+        <div id="paquete-1" class="row row-paquete">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Paquete Psicológico N° 1</h1> <br>
+                        <p class="">Te ayudo a obtener claridad de tu situación actual.</p>
+                        <p><b>Aclara tus dudas y aprende nuevas alternativas para solucionar lo que deseas.</b></p>
+                        <br>
+                        <div class="row despliegue">
+                            <div class="col">
+                                <p><u>Incluye:</u></p>
+                                <p class="tabulado"> -   Una sesión individual de una hora aproximadamente vía Zoom.</p>
+                                <p>¿Qué vas a lograr?</p>
+                                <p class="tabulado"> -   Tener claridad y seguridad para que tomes decisiones.</p>
+                                <p class="tabulado"> -   Identificar las herramientas que tú ya posees para afrontar posibles conflictos.</p>
+                                <p class="tabulado"> -   Reconocer y gestionar las emociones que te generan dificultades.</p>
                             </div>
-                            <br>
-                            <p>Valor: $47.000 pesos chilenos/ 69 USD</p>
-                            <br>
-                            <p>
-                                Luego de realizar el pago y enviar el comprobante a nataliabecerraulloa@gmail.com podrás agendar 
-                                la fecha de la primera sesión, a través del enlace que será enviado a tu correo.
-                            </p><br>
-                            <p>Métodos de pago: PayPal y Flow con tarjeta de crédito o débito.</p><br>
-                            <p>El valor total de la sesión debe cancelarse antes de iniciar con el servicio.</p>
                         </div>
-                        <div class="card-footer">
-                            <button class="boton">Quiero inicar sesiones contigo</button>
-                            <button class="boton-volver"><a href="#titulo-paquetes">Volver a paquetes</a></button>
-                        </div>
+                        <br>
+                        <p>Valor: $47.000 pesos chilenos/ 69 USD</p>
+                        <br>
                     </div>
-                </div>
-            </div>
-            <div id="paquete-2" class="row row-paquete">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1>Paquete Psicológico N° 2</h1> <br>
-                            <p>Te ayudo a afrontar conversaciones difíciles.</p>
-                            <p><b>Comienzas a ser más consciente de todo lo que quieres para ti.</b></p>
-                            <div class="row despliegue">
-                                <div class="col">
-                                    <p><u>Incluye:</u></p>
-                                    <p class="tabulado"> - 4 sesiones individuales de una hora aproximadamente vía Zoom.</p>
-                                    <p class="tabulado"> - Duración: Las sesiones serán una vez por semana, durante 1 mes.</p>
-                                    <p class="tabulado"> - Un análisis en la primera sesión de tu situación actual y asesoramiento en el plan de trabajo.</p>
-                                    <p>¿Qué vas a lograr?</p>
-                                    <p class="tabulado"> -  Aprenderás a afrontar conversaciones difíciles, de forma respetuosa contigo misma/o y con tu pareja.</p>
-                                    <p class="tabulado"> -  Aprenderás a regular tu estado interno en las situaciones difíciles con tu pareja.</p>
-                                    <p class="tabulado"> -  Podrás identificar tus propias herramientas para poder enfrentar conflictos puntuales.</p>
-                                </div>
-                            </div>
-                            <br>
-                            <p>Valor: $167.000 pesos chilenos/ 239 USD</p>
-                            <br>
-                            <p>
-                                Luego de realizar el pago y enviar el comprobante a nataliabecerraulloa@gmail.com podrás agendar 
-                                la fecha de la primera sesión, a través del enlace que será enviado a tu correo.
-                            </p><br>
-                            <p>Métodos de pago: PayPal y Flow con tarjeta de crédito o débito.</p><br>
-                            <p>El valor total de la sesión debe cancelarse antes de iniciar con el servicio.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="boton">Quiero inicar sesiones contigo</button>
-                            <button class="boton-volver"><a href="#titulo-paquetes">Volver a paquetes</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="paquete-3" class="row row-paquete">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1>Paquete Psicológico N° 3</h1> <br>
-                            <p>Te ayudo con estrategias efectivas para hacerte cargo de ti misma/o.</p>
-                            <div class="row despliegue">
-                                <div class="col">
-                                    <p><u>Incluye:</u></p>
-                                    <p class="tabulado"> - 8 sesiones individuales de una hora aproximadamente vía Zoom.</p>
-                                    <p class="tabulado"> - Duración: Las sesiones serán una vez por semana, durante 2 meses.</p>
-                                    <p class="tabulado"> - Un análisis en la primera sesión de su situación actual y asesoramiento en el plan de trabajo que se adapten a sus necesidades y objetivos.</p>
-                                    <p>¿Qué vas a lograr?</p>
-                                    <p class="tabulado"> -  Podrás entender, comprender y sanar tus heridas emocionales.</p>
-                                    <p class="tabulado"> -  Aprenderás a resignificar las creencias que te impiden estar bien contigo y con tu pareja (si corresponde).</p>
-                                    <p class="tabulado"> -  Aprenderás a regular tu estado interno en las situaciones difíciles con tu pareja (si corresponde).</p>
-                                    <p class="tabulado"> -  Incorporarás estrategias efectivas para gestionar tus emociones.</p>
-                                </div>
-                            </div>
-                            <br>
-                            <p>Valor: $317.000 pesos chilenos/ 473 USD</p>
-                            <br>
-                            <p>
-                                Luego de realizar el pago y enviar el comprobante a nataliabecerraulloa@gmail.com podrás agendar 
-                                la fecha de la primera sesión, a través del enlace que será enviado a tu correo.
-                            </p><br>
-                            <p>Métodos de pago: PayPal y Flow con tarjeta de crédito o débito.</p><br>
-                            <p>El valor total de la sesión debe cancelarse antes de iniciar con el servicio.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="boton">Quiero inicar sesiones contigo</button>
-                            <button class="boton-volver"><a href="#titulo-paquetes">Volver a paquetes</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--FIN SECCION INFORMACION DE SERVICIOS-->
-    </div>
-
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                </figure>
-                <h2>METODOS DE PAGO</h2>
-                <img class="pago_img" src="img/CutPay.png" alt="Metodos_de_pago.png">
-                </figure>
-            </div>
-            <div class="box">
-                <img class="img_naty" src="img/Naty.png" alt="">
-                <h2>NATALIA BECERRA</h2>
-                <p>PSICOLOGA DE RELACIONES CON 10 AÑOS DE EXPERIENCIA</p>
-            </div>
-            <div class="box">
-                <h2>REDES SOCIALES</h2>
-                <div class="red-social">
-                    <a href="#" target="_blank" class="fab fa-facebook"></a>
-                    <a href="https://www.instagram.com/sanandoconarmonia/" target="_blank" class="fab fa-instagram"></a>
-                    <a href="#" target="_blank" class="fab fa-whatsapp"></a>
-                </div>
-
-                <div class="box2">
-                    <hr></hr>
-                    <h2>CONTACTAME</h2>
-                    <h2>Email: sanandoconarmonia@gmail.com</h2>
-                    <h2>Telefono: 958438509</h2>
-                    <div class="contactame">
-
+                    <div class="card-footer">
+                        <button class="boton">Quiero inicar sesiones contigo</button>
+                        <button class="boton-volver"><a href="#titulo-paquetes">Volver a paquetes</a></button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="grupo-2">
-            <small>&copy; 2021 <b>Natalia Becerra</b> - Todos los Derechos Reservados.</small>
+        <div id="paquete-2" class="row row-paquete">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Paquete Psicológico N° 2</h1> <br>
+                        <p>Te ayudo a afrontar conversaciones difíciles.</p>
+                        <p><b>Comienzas a ser más consciente de todo lo que quieres para ti.</b></p>
+                        <div class="row despliegue">
+                            <div class="col">
+                                <p><u>Incluye:</u></p>
+                                <p class="tabulado"> - 4 sesiones individuales de una hora aproximadamente vía Zoom.</p>
+                                <p class="tabulado"> - Duración: Las sesiones serán una vez por semana, durante 1 mes.</p>
+                                <p class="tabulado"> - Un análisis en la primera sesión de tu situación actual y asesoramiento en el plan de trabajo.</p>
+                                <p>¿Qué vas a lograr?</p>
+                                <p class="tabulado"> -  Aprenderás a afrontar conversaciones difíciles, de forma respetuosa contigo misma/o y con tu pareja.</p>
+                                <p class="tabulado"> -  Aprenderás a regular tu estado interno en las situaciones difíciles con tu pareja.</p>
+                                <p class="tabulado"> -  Podrás identificar tus propias herramientas para poder enfrentar conflictos puntuales.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <p>Valor: $167.000 pesos chilenos/ 239 USD</p>
+                        <br>
+                    </div>
+                    <div class="card-footer">
+                        <button class="boton">Quiero inicar sesiones contigo</button>
+                        <button class="boton-volver"><a href="#titulo-paquetes">Volver a paquetes</a></button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+        <div id="paquete-3" class="row row-paquete">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Paquete Psicológico N° 3</h1> <br>
+                        <p>Te ayudo con estrategias efectivas para hacerte cargo de ti misma/o.</p>
+                        <div class="row despliegue">
+                            <div class="col">
+                                <p><u>Incluye:</u></p>
+                                <p class="tabulado"> - 8 sesiones individuales de una hora aproximadamente vía Zoom.</p>
+                                <p class="tabulado"> - Duración: Las sesiones serán una vez por semana, durante 2 meses.</p>
+                                <p class="tabulado"> - Un análisis en la primera sesión de su situación actual y asesoramiento en el plan de trabajo que se adapten a sus necesidades y objetivos.</p>
+                                <p>¿Qué vas a lograr?</p>
+                                <p class="tabulado"> -  Podrás entender, comprender y sanar tus heridas emocionales.</p>
+                                <p class="tabulado"> -  Aprenderás a resignificar las creencias que te impiden estar bien contigo y con tu pareja (si corresponde).</p>
+                                <p class="tabulado"> -  Aprenderás a regular tu estado interno en las situaciones difíciles con tu pareja (si corresponde).</p>
+                                <p class="tabulado"> -  Incorporarás estrategias efectivas para gestionar tus emociones.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <p>Valor: $317.000 pesos chilenos/ 473 USD</p>
+                        <br>
+                    </div>
+                    <div class="card-footer">
+                        <button class="boton">Quiero inicar sesiones contigo</button>
+                        <button class="boton-volver"><a href="#titulo-paquetes">Volver a paquetes</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FIN SECCION INFORMACION DE SERVICIOS-->
 
+</div>
 
-    <!--Vinculo con archivos .js -->
-    <script src="js/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-
-</body>
-
-</html>
+{% endblock contenido %}

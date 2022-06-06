@@ -3,11 +3,16 @@
 .servicios {
     text-align: center;
     padding: 100px 50px;
+    background-image: url('../img/fondohoja3.jpg');
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
+
 
 .servicios .servicios-titulo {
     font-size: 3em;
-
+    padding-top: 50px;
 }
 
 .servicios .servicios-texto {
@@ -53,46 +58,6 @@
     color: #F1ECEB;
 }
 
-.servicios .card .modal-dialog {
-    display: flex;
-    justify-content: center;
-}
-
-.servicios .card .modal-content{
-    height: 680px;
-    width: 700px;
-}
-
-.servicios .card .modal-content .modal-header{
-    font-weight: bold;
-    justify-content: space-between  ;
-}
-
-.servicios .card .modal-body {
-    padding: 40px 40px;
-}
-
-.servicios .card .modal-body .despliegue {
-    text-align: left;
-}
-
-.card .modal-body .despliegue .tabulado {
-    display: flex;
-    padding-left: 50px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-.servicios .card .modal-footer a {
-    color: #ffff;
-    filter: none;
-    text-decoration: none;
-    width: auto;
-} 
-
-.servicios .card .modal-footer a:hover {
-    filter: opacity(0.4) drop-shadow(0 0 0); 
-}
 
 
 /*SERVICIOS, PÁGINA SERVICIOS */
@@ -169,6 +134,7 @@
     height: 400px;
     border-radius: 30px;  
     padding: 10% 5%;  
+
 }
 
 .servicios-presentacion .row-paquetes .card .card-footer {
@@ -190,6 +156,8 @@
 
 .servicios-informacion .row-paquete .card {
     padding: 0px 30px;
+    background-image: url('../img/30.svg');
+    background-size: cover;
 }
 
 .servicios-informacion .row-paquete .despliegue .tabulado {

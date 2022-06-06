@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'NataliaBecerra.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'BD_NataliaBecerra',
+        'NAME': 'bd_nataliabecerra',
         'USER': 'root',
-        'PASSWORD': 'admin',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }
