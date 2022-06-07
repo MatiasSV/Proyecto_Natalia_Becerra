@@ -1,0 +1,24 @@
+.preguntas-frecuentes {
+    margin: 50px 0 100px 0;
+    padding: 0 50px 0 50px;
+}
+
+.preguntas-frecuentes .row-titulo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 50px;
+
+}
+
+
+.preguntas-frecuentes .row-cierre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 70px;
+
+}
