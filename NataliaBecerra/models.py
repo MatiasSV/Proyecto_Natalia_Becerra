@@ -26,8 +26,8 @@ class PostBlog(models.Model):
 class ComentarioPost(models.Model):
     idcomentario = models.AutoField(primary_key=True)
     contenido_comentario = models.TextField()
-    post_blog_idpost = models.ForeignKey('PostBlog', models.DO_NOTHING, db_column='post_blog_idpost')
-    auth_user = models.ForeignKey(User, models.DO_NOTHING)
+    post_blog_idpost = models.ForeignKey('PostBlog', models.PROTECT, db_column='post_blog_idpost')
+    auth_user = models.ForeignKey(User, models.PROTECT)
 
     class Meta:
         managed = False

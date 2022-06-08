@@ -19,8 +19,16 @@ from django.contrib.auth.views import TemplateView
 
 
 urlpatterns = [
+
+    # URLS DE NAVEGACION EN LA PÁGINA (los modulos directos que no necesitan una app)
     path('admin/', admin.site.urls),
+    path('', TemplateView.as_view(template_name='index.html'), name='home'),
+    path('preguntasfrecuentes/', TemplateView.as_view(template_name='preguntasfrecuentes.html'), name='preguntasfrecuentes'), 
+    path('servicios/', TemplateView.as_view(template_name='servicios.html'), name='servicios'), 
+
+    # INCLUSION DE LAS URLS CORRESPONDIENTES A LAS APLICACIONES DEL PROYECTO
+    path('', include('apps.blog.urls')),
 
 
-    path('', TemplateView.as_view(template_name='preguntasfrecuentes.html'), name='home'),
+    
 ]

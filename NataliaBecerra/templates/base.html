@@ -67,8 +67,7 @@
         <nav class="nav-main fijada">
             <ul class="nav-menu-logo">
                 <li>
-                    <a href="index.html"><img src="{% static 'img/logonatalia.ico' %}" class="img-logo" alt=""></a>
-                    <!--<a href="#">Logo Natalia</a>-->
+                    <a href="{% url 'home' %}"><img src="{% static 'img/logonatalia.ico' %}" class="img-logo" alt=""></a>
                 </li>
             </ul>
             <ul class="nav-menu">
@@ -76,7 +75,7 @@
                     <a href="#">Inicio</a>
                 </li>
                 <li>
-                    <a href="servicios.html">Servicios</a>
+                    <a href="{% url 'servicios' %}">Servicios</a>
                 </li>
                 <li>
                     <a href="#">Podcast</a>
@@ -85,7 +84,7 @@
                     <a href="sobre_mi.html">Sobre Mí</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="{% url 'preguntasfrecuentes' %}">Preguntas frecuentes</a>
                 </li>
                 <li>
                     <a href="#">Horas disponibles</a>
