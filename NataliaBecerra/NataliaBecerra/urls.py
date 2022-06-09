@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.contrib.auth.views import TemplateView 
+from django.contrib.auth.views import TemplateView
+from apps.blog.views import podcast
 
 
 urlpatterns = [
@@ -24,7 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
     path('preguntasfrecuentes/', TemplateView.as_view(template_name='preguntasfrecuentes.html'), name='preguntasfrecuentes'), 
-    path('servicios/', TemplateView.as_view(template_name='servicios.html'), name='servicios'), 
+    path('servicios/', TemplateView.as_view(template_name='servicios.html'), name='servicios'),
+    path('podcast/',podcast),
+    
 
     # INCLUSION DE LAS URLS CORRESPONDIENTES A LAS APLICACIONES DEL PROYECTO
     path('', include('apps.blog.urls')),
