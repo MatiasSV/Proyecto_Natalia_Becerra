@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'NataliaBecerra.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'NataliaBD',
+        'NAME': 'bd_nataliabecerra',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',

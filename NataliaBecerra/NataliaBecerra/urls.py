@@ -27,6 +27,7 @@ urlpatterns = [
     path('preguntasfrecuentes/', TemplateView.as_view(template_name='preguntasfrecuentes.html'), name='preguntasfrecuentes'), 
     path('servicios/', TemplateView.as_view(template_name='servicios.html'), name='servicios'),
     path('podcast/',podcast),
+    path('sobre_mi/' , TemplateView.as_view(template_name='sobre_mi.html'), name='sobre_mi'),
     
 
     # INCLUSION DE LAS URLS CORRESPONDIENTES A LAS APLICACIONES DEL PROYECTO
