@@ -1,0 +1,46 @@
+.blog {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.blog a {
+    color: black;
+}
+
+.blog a:hover {
+    color: cadetblue;
+}
+
+.blog .titulo-blog {
+    font-size: large;
+}
+
+.blog .row-blog {
+    text-align: left;
+}
+
+
+.blog .row-blog .card {
+    max-height: 350px;
+    height: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    margin-bottom: 200px;
+}
+
+.blog .card .card-tittle h2{
+    padding-bottom: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.blog .row-blog .card .footer {
+    background-color: aqua;
+    justify-content: stretch;
+    justify-items: center;
+    padding-left: 10px;
+    display: flex;
+    bottom:-1; 
+    z-index:999999;   
+    
+}

@@ -1,0 +1,40 @@
+.ver-post {
+    padding: 70px 50px 100px 50px;
+}
+
+.ver-post a:hover{
+    color: #8BD1D3;
+}
+
+.ver-post .volver {
+    margin-bottom: 50px;
+}
+
+.ver-post .comentarios .info-comentario {
+    margin-bottom: 30px;
+}
+
+.ver-post .comentarios .info-comentario .foto {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.ver-post .comentarios .info-comentario img {
+    max-width: 90px;
+    max-height: 80px;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.ver-post .comentarios .info-comentario .nombre-usuario {
+    align-items: center;
+    justify-items: center;
+}
+
+.info-comentario .nombre-usuario p {
+    margin: 0;
+    padding: 0;
+}

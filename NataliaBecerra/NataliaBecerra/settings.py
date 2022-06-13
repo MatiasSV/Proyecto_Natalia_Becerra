@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.blog',
+    'apps.user',
+    'NataliaBecerra',
+    'ckeditor',
 
 ]
 
@@ -80,7 +83,7 @@ WSGI_APPLICATION = 'NataliaBecerra.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'NataliaBD',
+        'NAME': 'natalia2',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
@@ -128,12 +131,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/img/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static', 'img')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<div class="container">
+    <section class="blog">
+        <div class="row titulo-blog">
+            <div class="col-12">
+                <h1>
+                    Bienvenido a mi blog
+                </h1>
+            </div>
+        </div>
+        
+        <div class="row row-blog">
+            {% for post in object_list %}
+            <div class="col-4">   
+                <div class="card">
+                    <div class="card-tittle">
+                        <h2> <a href="{% url 'ver_post' post.pk %}"> {{ post.titulo }} </a></h2>
+                        <p>{{ post.resumen }}</p>
+                    </div>  
+                    <hr>
+                    <div class="footer">
+                        <h6>{{ post.fecha }}</h6>
+                    </div>
+                    
+                </div> 
+            </div>
+            {% endfor %} 
+        </div>
+        
+    </section>
+</div>
+
+{% endblock contenido %}
+
+
+

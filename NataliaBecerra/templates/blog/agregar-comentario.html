@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+    <h1>Agregar comentario</h1>
+    <br><br>
+    <div class="form-group">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button> Añadir comentario</button>
+        </form>
+    </div>
+
+{% endblock contenido %}

@@ -5,23 +5,23 @@
 
     <section class="presentacion">
         <div class="row newprueba">
-            <div class="col-5 texto">
+            <div class="col-lg-5 texto">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-12">
                         <h3 class="intro-titulo">¿Sientes que <b>no es suficiente</b> todo lo que haces para que tú y tu pareja
                             estén bien?
                         </h3> <hr><br>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-10">
+                    <div class="col-lg-10">
                         <p>
                             Hola, soy Naty, tengo 35 años, vivo en Viña del Mar, Chile, con mi hija de 18 años y mi perrita Lilu.
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-10">
+                    <div class="col-lg-10">
                         <p>
                             Te quiero ofrecer un espacio donde puedas ser tú misma/o, mostrarte tal como eres, 
                             donde vas a sentir esa <b>conexión, tranquilidad, y confianza</b> que necesitas para 
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="row nleter">
-                    <div class="col-10">
+                    <div class="col-lg-10">
                         <hr><p>Buscar ayuda es el primer paso para sanar</p>
                         <form action="#">
                             <div class="formulario-newsletter">
@@ -47,7 +47,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-7 foto">
+            <div class="col-lg-7 foto">
+                <!--ESTA ES LA FOTO; ESTÁ EN CSS COMO URL BACKGROUND-->
             </div>
         </div>
     </section>
@@ -182,7 +183,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Paquete N° 1</h5>
@@ -192,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Paquete N° 2</h5>
@@ -202,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Paquete N° 3</h5>
@@ -220,7 +221,7 @@
         <section class="testimonios">
 
             <div class="row">
-                <div class="col-12 titulo">
+                <div class="col-lg-12 titulo">
                     <h1>Testimonios</h1>
                 </div>
             </div>
@@ -234,63 +235,65 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-                <div class = "col-12 mt-5">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div id="tes1" class="row carrusel-completo">
-                                <div class="col-5 carrusel-texto">
-                                    <p> Natalia es excelente persona, 100% recomendada
-                                        Me encuentro muy agradecida con ella.
-                                        realmente sanas con mucha armonia y paz.
-                                        Me enseñó a re-conectarme conmigo. A
-                                        perdonar y a entender lo linda que es la
-                                        vida
-                                    </p>
-                                    <h3 class="titulo-testimonio diseño-rosado ">Mariett Ortega</h3>
+                <div class="row">
+                    <div class = "col-lg-12">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div id="tes1" class="row carrusel-completo">
+                                    <div class="col-lg-5 carrusel-texto">
+                                        <p> Natalia es excelente persona, 100% recomendada
+                                            Me encuentro muy agradecida con ella.
+                                            realmente sanas con mucha armonia y paz.
+                                            Me enseñó a re-conectarme conmigo. A
+                                            perdonar y a entender lo linda que es la
+                                            vida
+                                        </p>
+                                        <h3 class="titulo-testimonio diseño-rosado ">Mariett Ortega</h3>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img class ="w3-circle" src="{% static 'img/fototestim.png' %}" alt="First slide">
+                                    </div>
                                 </div>
-                                <div class="col-3">
-                                    <img class ="w3-circle" src="{% static 'img/fototestim.png' %}" alt="First slide">
-                                </div>
+                                <br>
                             </div>
+                            <div class="carousel-item" >
+                                <div id="tes2" class="row carrusel-completo">
+                                    <div class="col-lg-5 carrusel-texto">
+                                        <p>
+                                            Desde que conoci a Natalia cambio mi vida por completo.
+                                            Me encuentro muy agradecida con ella.
+                                            realmente sanas con mucha armonia y paz.
+                                            Me enseñó a re-conectarme conmigo. A
+                                            perdonar y a entender lo linda que es la
+                                            vida
+                                        </p>
+                                        <h3 class="titulo-testimonio diseño-rosado ">Juan Perez</h3>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img class="w3-circle" src="{% static 'img/fototestim.png' %}" alt="Second slide">
+                                    </div>
+                                </div>
                             <br>
-                        </div>
-                        <div class="carousel-item">
-                            <div id="tes2" class="row carrusel-completo">
-                                <div class="col-5 carrusel-texto">
-                                    <p>
-                                        Desde que conoci a Natalia cambio mi vida por completo.
-                                        Me encuentro muy agradecida con ella.
-                                        realmente sanas con mucha armonia y paz.
-                                        Me enseñó a re-conectarme conmigo. A
-                                        perdonar y a entender lo linda que es la
-                                        vida
-                                    </p>
-                                    <h3 class="titulo-testimonio diseño-rosado ">Juan Perez</h3>
-                                </div>
-                                <div class="col-3">
-                                    <img class="w3-circle" src="{% static 'img/fototestim.png' %}" alt="Second slide">
-                                </div>
                             </div>
-                          <br>
-                        </div>
-                        <div class="carousel-item">
-                            <div id="tes3" class="row carrusel-completo">
-                                <div class="col-5 carrusel-texto">
-                                    <p>
-                                        Desde que conoci a Natalia cambio mi vida por completo.
-                                        Me encuentro muy agradecida con ella.
-                                        realmente sanas con mucha armonia y paz.
-                                        Me enseñó a re-conectarme conmigo. A
-                                        perdonar y a entender lo linda que es la
-                                        vida
-                                    </p>
-                                    <h3 class="titulo-testimonio diseño-rosado ">Maria Salazar</h3>
+                            <div class="carousel-item">
+                                <div id="tes3" class="row carrusel-completo">
+                                    <div class="col-lg-5 carrusel-texto">
+                                        <p>
+                                            Desde que conoci a Natalia cambio mi vida por completo.
+                                            Me encuentro muy agradecida con ella.
+                                            realmente sanas con mucha armonia y paz.
+                                            Me enseñó a re-conectarme conmigo. A
+                                            perdonar y a entender lo linda que es la
+                                            vida
+                                        </p>
+                                        <h3 class="titulo-testimonio diseño-rosado ">Maria Salazar</h3>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img class="w3-circle" src="{% static 'img/fototestim.png' %}" alt="Third slide">
+                                    </div>
                                 </div>
-                                <div class="col-3">
-                                    <img class="w3-circle" src="{% static 'img/fototestim.png' %}" alt="Third slide">
-                                </div>
+                            <br>
                             </div>
-                          <br>
                         </div>
                     </div>
                 </div>

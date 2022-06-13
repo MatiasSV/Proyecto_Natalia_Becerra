@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<div class="container">
+    <section class="editar">
+        <div class="form-group">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-secondary">Actualizar perfil</button>
+            </form>
+        </div>
+
+    </section>
+</div>
+
+{% endblock contenido %}

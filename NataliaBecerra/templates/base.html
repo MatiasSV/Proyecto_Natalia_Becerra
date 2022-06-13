@@ -22,8 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
     <!--Importacion de Iconos Font Awasome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f9b9aa709b.js" crossorigin="anonymous"></script>
 
     <!--Vinculo con archivos .css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -38,7 +37,10 @@
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'css/sobremi.css' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registro/login.css' %}">
     <link rel="stylesheet" href="{% static 'css/preguntasfrecuentes.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog/verpost.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
@@ -72,23 +74,38 @@
             </ul>
             <ul class="nav-menu">
                 <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
                     <a href="{% url 'servicios' %}">Servicios</a>
                 </li>
                 <li>
-                    <a href="#">Podcast</a>
-                </li>
-                <li>
-                    <a href="sobre_mi.html">Sobre Mí</a>
+                    <a href="{% url 'blog' %}">Blog</a>
                 </li>
                 <li>
                     <a href="{% url 'preguntasfrecuentes' %}">Preguntas frecuentes</a>
                 </li>
+                {% if user.is_authenticated %}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                      Cuenta
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Editar mi perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Mis sesiones</a></li>
+                      <li><a class="dropdown-item" href="#">Añadir</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="{% url 'logout' %}">Cerrar sesión</a></li>
+                    </ul>
+                  </li>
+
+                {% else %}
                 <li>
-                    <a href="#">Horas disponibles</a>
+                    <a href="{% url 'register' %}">Registrarse</a>
                 </li>
+                <li>
+                    <a href="{% url 'login' %}">Iniciar sesión</a>
+                </li>   
+                {% endif %}
+                
+                
             </ul>
         </nav>
   

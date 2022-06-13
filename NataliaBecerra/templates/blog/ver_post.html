@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<div class="container">
+    <section class="ver-post">
+        <div class="row">
+            <div class="col volver">
+                <button class="diseño-rosado"> 
+                   <a href="{% url 'blog' %}"><i class="fa-solid fa-arrow-left"></i> Volver</a> 
+                </button>
+            </div>
+        </div>
+
+        <div class="row">              
+            <div class="col">
+                <h1>{{ post.titulo }}</h1>
+                <p>{{ post.contenido | safe }}</p>
+                <p>Fecha de publicacion: {{ post.fecha }}</p>
+                
+            </div>
+        </div>
+
+        <div class="row comentarios">
+            <div class="col-12 ">
+                <br><br>
+                <h2>Comentarios</h2>
+                <hr>
+
+                {% if not post.comentarios.all %}
+
+                    Sin comentarios aún ... <a href="{% url 'agregar_comentario' post.pk %}">Añadir comentario</a>
+
+                {% else %}
+
+                <a href="{% url 'agregar_comentario' post.pk%}">Añadir comentario</a>
+                <br><br>
+
+                    {% for comentario in post.comentarios.all %}
+                        <div class="card mb-3">
+                            <div class="row g-0 info-comentario">
+                                <div class="col-md-1 foto">
+                                    {% if comentario.autor.perfil.fotoPerfil %}
+                                        <img src="{{ comentario.autor.perfil.fotoPerfil.url }}" alt="...">
+                                    {% else %}
+                                        <img src="{% static 'img/fotoPerfil/default_user.png' %}" alt="">
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> <strong>{{ comentario.autor.username }}</strong></h5>
+                                        <p class="card-text">{{ comentario.contenido }}.</p>
+                                        <p class="card-text"><small class="text-muted">{{ comentario.fecha }}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                 
+                    {% endfor %}
+                {% endif%}
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col volver">
+                <button class="diseño-rosado"> 
+                   <a href="{% url 'blog' %}"><i class="fa-solid fa-arrow-left"></i> Volver</a> 
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock contenido %}
+
+
+

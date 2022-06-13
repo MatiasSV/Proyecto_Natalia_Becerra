@@ -28,3 +28,5 @@ function slides(){
 
 var div = document.getElementById('eapps-link');
 div.remove();
+
+
