@@ -10,18 +10,31 @@
 
 /* inicio/home */
 
-.home {
+/*.home {
     text-align: center;
     padding: 100px 50px;
 }
-
+/*
 
 /* fin css inicio/home */
 
-
-
-.sobreMi_section {
-    text-align: center;
-    padding: 100px 50px;
+.sobremi-home {
+    padding: 10px 60px;
 }
 
+.sobremi-titulo {
+    padding: 10px 20px;
+}
+
+.sobremi-home h1 {
+    display: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sobremi-contenido p{
+    width: auto;
+}
+
+
+  

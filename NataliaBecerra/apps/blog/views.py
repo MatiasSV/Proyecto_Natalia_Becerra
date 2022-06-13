@@ -87,3 +87,16 @@ def ver_post(request, pk):
 #         return context
 
 
+<<<<<<< HEAD
+=======
+episodios_podcast = 'static/text/episodios_podcast.txt'
+def podcast(request):
+    lista_episodios = []
+    episodios = open(episodios_podcast,"r",encoding="utf-8")
+    for i in episodios:
+        lista_episodios.append(i)
+    episodios.close()
+    dict_episodios={"episodios":lista_episodios}
+    return render(request,"podcast.html",dict_episodios)
+
+>>>>>>> 74fc3182ba91a571d3b56b0c528117c4ffb99b6d
