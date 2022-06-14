@@ -67,3 +67,9 @@ body {
 .boton-volver:hover {
     filter: none;
 }
+
+
+a {
+    text-decoration: none;
+    width: auto;
+}

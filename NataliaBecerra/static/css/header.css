@@ -35,7 +35,7 @@ nav {
     max-height: 1;
 }
 
-a {
+nav a {
     color: #ffff;
     text-decoration: none;
     width: auto;

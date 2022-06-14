@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+              <div class="col">
                 <div class="form-group">
                     <form method="POST">
                         {% csrf_token %}
@@ -19,7 +19,10 @@
                         <button class="btn btn-secondary">Iniciar sesión</button>
                     </form>
                 </div>
-            </div>
+                <div>
+                  <p>¿Aún no tienes cuenta? <a href="{% url 'register' %}">Registrate aquí.</a></p>
+              </div>
+              </div>
         </div> <br>
     </section>
 </div>

@@ -30,6 +30,21 @@ class AgregarComentario(CreateView):
 
     success_url = reverse_lazy('blog')
 
+
+
+episodios_podcast = 'static/text/episodios_podcast.txt'
+def podcast(request):
+    lista_episodios = []
+    episodios = open(episodios_podcast,"r",encoding="utf-8")
+    for i in episodios:
+        lista_episodios.append(i)
+    episodios.close()
+    dict_episodios={"episodios":lista_episodios}
+    return render(request,"podcast.html",dict_episodios)
+
+
+
+
 # def agregarComentario(request, pk):
 #     post = get_object_or_404(Post, id=pk)
 #     if request.method == 'POST':
@@ -49,17 +64,17 @@ class AgregarComentario(CreateView):
 #     return render(request, 'blog/blog.html', {'posts': posts})
 
 
-def ver_post(request, pk):
-    ctx={}
-    post = Post.objects.filter(id=pk)
-    comentarios = Comentario.objects.filter(id=pk)
+# def ver_post(request, pk):
+#     ctx={}
+#     post = Post.objects.filter(id=pk)
+#     comentarios = Comentario.objects.filter(id=pk)
 
-    ctx={
-        'comentario':comentarios,
-        'post':post,
-    }
+#     ctx={
+#         'comentario':comentarios,
+#         'post':post,
+#     }
 
-    return render(request, 'blog/ver_post.html', ctx)
+#     return render(request, 'blog/ver_post.html', ctx)
 
 
 
@@ -85,18 +100,3 @@ def ver_post(request, pk):
 #         context = super().get_context_data(**kwargs)
 #         post = Post.objects.filter(slug=self.kwargs.get('slug'))
 #         return context
-
-
-<<<<<<< HEAD
-=======
-episodios_podcast = 'static/text/episodios_podcast.txt'
-def podcast(request):
-    lista_episodios = []
-    episodios = open(episodios_podcast,"r",encoding="utf-8")
-    for i in episodios:
-        lista_episodios.append(i)
-    episodios.close()
-    dict_episodios={"episodios":lista_episodios}
-    return render(request,"podcast.html",dict_episodios)
-
->>>>>>> 74fc3182ba91a571d3b56b0c528117c4ffb99b6d

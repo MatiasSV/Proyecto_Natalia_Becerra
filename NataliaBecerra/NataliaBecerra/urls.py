@@ -13,7 +13,7 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='index.html'), name='home'),
     path('preguntasfrecuentes/', TemplateView.as_view(template_name='preguntasfrecuentes.html'), name='preguntasfrecuentes'), 
     path('servicios/', TemplateView.as_view(template_name='servicios.html'), name='servicios'),
-    path('podcast/',podcast),
+    path('podcast/',podcast, name="podcast"),
     path('sobre_mi/' , TemplateView.as_view(template_name='sobre_mi.html'), name='sobre_mi'),
     
 

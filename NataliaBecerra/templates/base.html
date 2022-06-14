@@ -82,6 +82,9 @@
                 <li>
                     <a href="{% url 'preguntasfrecuentes' %}">Preguntas frecuentes</a>
                 </li>
+                <li>
+                    <a href="{% url 'podcast' %}">Podcast</a>
+                </li>   
                 {% if user.is_authenticated %}
                 <li class="dropdown">
                     <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
@@ -100,9 +103,6 @@
                 <li>
                     <a href="{% url 'register' %}">Registrarse</a>
                 </li>
-                <li>
-                    <a href="{% url 'login' %}">Iniciar sesión</a>
-                </li>   
                 {% endif %}
                 
                 
