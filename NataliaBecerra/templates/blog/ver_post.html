@@ -34,7 +34,7 @@
 
                 {% else %}
 
-                <a href="{% url 'agregar_comentario' post.pk%}">Añadir comentario</a>
+                <a href="{% url 'agregar_comentario' post.pk %}">Añadir comentario</a>
                 <br><br>
 
                     {% for comentario in post.comentarios.all %}

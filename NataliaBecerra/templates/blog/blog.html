@@ -18,7 +18,7 @@
             <div class="col-4">   
                 <div class="card">
                     <div class="card-tittle">
-                        <h2> <a href="{% url 'ver_post' post.pk %}"> {{ post.titulo }} </a></h2>
+                        <h2> <a href="{% url 'ver_post' post.pk %} "><p name="{{post.titulo}}"> {{ post.titulo }}</p> </a></h2>
                         <p>{{ post.resumen }}</p>
                     </div>  
                     <hr>

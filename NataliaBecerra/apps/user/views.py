@@ -18,3 +18,6 @@ class EditarPerfil(generic.UpdateView):
 
     def get_object(self):
         return self.request.user
+
+def iniciarsesion(request):
+    print(request.POST)

@@ -11,6 +11,10 @@ from django.views.generic import TemplateView, CreateView, UpdateView, DeleteVie
 from .forms import ComentarioForm
 from .models import Comentario, Post
 
+def redirect_to_post(post):
+    post = Post
+    slug = post.titulo.replace(" ","-").lower()
+
 class Blog(ListView):
     model = Post
     template_name = 'blog/blog.html'
@@ -19,16 +23,26 @@ class VerPost(DetailView):
     model = Post
     template_name = 'blog/ver_post.html'
 
+    # def get_object(self):
+    #     id = self.kwargs.get('pk')
+    #     slug = self.kwargs.get('slug')
+
+
 class AgregarComentario(CreateView):
     model = Comentario
     form_class = ComentarioForm
     template_name = 'blog/agregar-comentario.html'
 
     def form_valid(self, form):
+        id_usuario = self.request.user.id
+        form.instance.autor_id = id_usuario
         form.instance.post_id = self.kwargs['pk']
         return super().form_valid(form)
 
     success_url = reverse_lazy('blog')
+
+
+
 
 
 
@@ -42,6 +56,10 @@ def podcast(request):
     dict_episodios={"episodios":lista_episodios}
     return render(request,"podcast.html",dict_episodios)
 
+
+def login(request):
+    login_info = request.POST
+    
 
 
 
@@ -64,17 +82,17 @@ def podcast(request):
 #     return render(request, 'blog/blog.html', {'posts': posts})
 
 
-# def ver_post(request, pk):
-#     ctx={}
-#     post = Post.objects.filter(id=pk)
-#     comentarios = Comentario.objects.filter(id=pk)
+def ver_post(request, pk):
+    ctx={}
+    post = Post.objects.filter(id=pk)
+    comentarios = Comentario.objects.filter(id=pk)
 
-#     ctx={
-#         'comentario':comentarios,
-#         'post':post,
-#     }
+    ctx={
+        'comentario':comentarios,
+        'post':post,
+    }
 
-#     return render(request, 'blog/ver_post.html', ctx)
+    return render(request, 'blog/ver_post.html', ctx)
 
 
 

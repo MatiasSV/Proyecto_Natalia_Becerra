@@ -13,10 +13,16 @@
         <div class="row">
               <div class="col">
                 <div class="form-group">
-                    <form method="POST">
+                    <form id="login" method="POST" action="/iniciarsesion/">
                         {% csrf_token %}
-                        {{ form.as_p }}
+                        {{ form.as_p }} 
                         <button class="btn btn-secondary">Iniciar sesión</button>
+                      <!--    <label for="login_username">Nombre de usuario: </label>
+                          <input type="text" id="login_username" name="login_username">
+                          <label for="user_pswd">Contraseña</label>
+                          <input type="password" id="user_pswd" name="user_pswd">
+                          <input type="submit" id="loginbtn" name="loginbtn" value="Iniciar sesión">
+                     -->
                     </form>
                 </div>
                 <div>
