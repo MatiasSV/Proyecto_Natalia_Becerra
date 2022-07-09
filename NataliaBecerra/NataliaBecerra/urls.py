@@ -15,7 +15,6 @@ urlpatterns = [
     path('servicios/', TemplateView.as_view(template_name='servicios.html'), name='servicios'),
     path('podcast/',podcast, name="podcast"),
     path('sobre_mi/' , TemplateView.as_view(template_name='sobre_mi.html'), name='sobre_mi'),
-    
 
     # INCLUSION DE LAS URLS CORRESPONDIENTES A LAS APLICACIONES DEL PROYECTO
     path('', include('apps.blog.urls')),

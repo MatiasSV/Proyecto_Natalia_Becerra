@@ -54,22 +54,31 @@ svg {
                 <p style="text-align: center; margin-bottom: 30px; width: 95%;">Bienvenidas y bienvenidos al podcast Sanando con Armonía, yo soy Natalia Becerra y en este espacio busco ayudarte en este viaje, para que hagas consciente que el bienestar está en tus manos.
                 Mi invitación es que te conozcas, te escuches, te entiendas, te cuides, y te centres en ti; mediante reflexiones, enseñanzas y actividades que enriquezcan tu alma y tu vida.
                 Me encantaría que pienses en este podcast como tu ratito semanal para despegarte del día y reconectar contigo.</p>
-                <iframe style="border-radius:12px;" src="https://open.spotify.com/embed/show/3I4VnXwyS6KKOb48BISBi9?utm_source=generator&theme=0" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
+                <div id="widget">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7LyO3I1WI4oXcHCLQD5Msw?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </div>
             </div>
             <div class="col">
                 <img src="https://cdn-images-1.listennotes.com/podcasts/sanando-con-armon%C3%ADa-natalia-maria-becerra-Kcq-0TMZrsp-lqU5ZxaopLD.1400x1400.jpg">
             </div>
         </div>
         <h1 class="diseño-rosado" style="width:60%; margin-left: 20%;">Episodios</h1>
-        <div class="row-podcast" style="float:center;">
-            <table class="episodios-podcast">
+        <div class="row-podcast" style="float:center; display: flex; flex-direction: column;">
+            
+    
                 {% for episodio in episodios %}
-                <tr><td><p id="episodio">{{ episodio }}</p></td></tr>
+                <button onclick='{{ episodio.0|add:"()" }}' style="background-color:#dce9b1; padding:10px; width: 100%; border-radius: 16px; margin-bottom: 10px; border:none;">{{episodio.1}}</button>                
+                <script>
+                    function {{ episodio.0 }}()
+                    {
+                        document.getElementById("widget").innerHTML = '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/{{ episodio.2 }}utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>';
+                    }
+                </script>
                 {% endfor %}
-            </table>
+            
         </div>
     </section>
+    
 </div>
 {% endblock contenido %}
 

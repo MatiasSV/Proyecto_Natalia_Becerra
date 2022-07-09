@@ -48,15 +48,18 @@ class AgregarComentario(CreateView):
 
 episodios_podcast = 'static/text/episodios_podcast.txt'
 def podcast(request):
+    seleccion=request.GET
     lista_episodios = []
     episodios = open(episodios_podcast,"r",encoding="utf-8")
+    elegido="7LyO3I1WI4oXcHCLQD5Msw?"
     for i in episodios:
+        i=i.split("/")
+        i[2]=i[2].replace("\n","")
         lista_episodios.append(i)
-    episodios.close()
+        if i[0] in seleccion:
+            elegido=i[2]
     dict_episodios={"episodios":lista_episodios}
     return render(request,"podcast.html",dict_episodios)
-
-
 def login(request):
     login_info = request.POST
     
